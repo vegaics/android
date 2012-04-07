@@ -244,6 +244,6 @@
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/vold" name="platform/system/vold" />
 
-  <project path="device/advent/vega" name="vegaics/android_device_advent_vega" remote="github" revision="master" />
-  <project path="android" name="vegaics/android" remote="github" revision="master" />
+  <project path="device/advent/vega" name="vegaics/android_device_advent_vega" remote="github" revision="refs/heads/master" />
+  <project path="android" name="vegaics/android" remote="github" revision="refs/heads/master" />
 </manifest>

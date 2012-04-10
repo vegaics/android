@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+<!--
+   This is the manifest file for downloading AOSP sources and the specific
+   projects that are needed for building vegaics.
+
+   Projects are downloaded from two remote sites. All the standard AOSP sources
+   are downloaded from android.googlesource.com and referenced as the aosp remote.
+   Sources that are vegaics specific are downloaded from the vegaics git and are
+   referenced as the github remote.
+
+   The default remote and revision are set to the aosp remote and the ics 4.0.4 revision.
+   This means that for all the other projects the remote and revision MUST be added.
+
+   Regards,
+   Scanno
+!-->
+
   <remote  name="aosp"
            fetch="https://android.googlesource.com/" />
 
@@ -244,6 +260,12 @@
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/vold" name="platform/system/vold" />
 
+<!-- 
+  Below are the git projects that are added for building vegaics
+!-->
+
   <project path="device/advent/vega" name="vegaics/android_device_advent_vega" remote="github" revision="refs/heads/master" />
+  <project path="device/nvidia/shuttle" name="vegaics/android_device_nvidia_shuttle" remote="github" revision="refs/heads/master" />
+
   <project path="android" name="vegaics/android" remote="github" revision="refs/heads/master" />
 </manifest>

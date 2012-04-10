@@ -168,7 +168,9 @@
   <project path="external/webrtc" name="platform/external/webrtc" />
   <project path="external/wpa_supplicant" name="platform/external/wpa_supplicant" />
   <project path="external/wpa_supplicant_6" name="platform/external/wpa_supplicant_6" />
+<!--
   <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" />
+!-->
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
   <project path="external/yaffs2" name="platform/external/yaffs2" />
   <project path="external/zlib" name="platform/external/zlib" />
@@ -187,7 +189,9 @@
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" />
+<!--
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" />
+!-->
   <project path="hardware/msm7k" name="platform/hardware/msm7k" />
   <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" />
   <project path="hardware/qcom/media" name="platform/hardware/qcom/media" />
@@ -257,12 +261,23 @@
   <project path="system/core" name="platform/system/core" />
   <project path="system/extras" name="platform/system/extras" />
   <project path="system/media" name="platform/system/media" />
+<!--
   <project path="system/netd" name="platform/system/netd" />
+!-->
   <project path="system/vold" name="platform/system/vold" />
 
+<!--
+   Below are the patched git projects compared to AOSP
+!-->
+  <project path="hardware/libhardware_legacy" name="vegaics/libhardware_legacy" remote="github" revision="refs/heads/master" />
+  <project path="external/wpa_supplicant_8" name="vegaics/wpa_supplicant_8" remote="github" revision="refs/heads/master"/>
+
+  <project path="system/netd" name="vegaics/netd" remote="github" revision="refs/heads/master"/>
 <!-- 
   Below are the git projects that are added for building vegaics
 !-->
+  <project path="hardware/atheros_wifi_libs" name="vegaics/atheros_wifi_libs" remote="github" revision="refs/heads/master"/>
+
 
   <project path="device/advent/vega" name="vegaics/android_device_advent_vega" remote="github" revision="refs/heads/master" />
   <project path="device/nvidia/shuttle" name="vegaics/android_device_nvidia_shuttle" remote="github" revision="refs/heads/master" />

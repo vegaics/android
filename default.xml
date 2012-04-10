@@ -282,8 +282,6 @@
 -->
   <project path="hardware/atheros_wifi_libs" name="vegaics/atheros_wifi_libs" remote="github" revision="refs/heads/master"/>
 
-
-  <project path="device/advent/vega" name="vegaics/android_device_advent_vega" remote="github" revision="refs/heads/master" />
   <project path="device/nvidia/shuttle" name="vegaics/android_device_nvidia_shuttle" remote="github" revision="refs/heads/master" />
 
   <project path="android" name="vegaics/android" remote="github" revision="refs/heads/master" />
